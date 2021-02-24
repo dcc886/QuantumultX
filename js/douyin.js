@@ -5,9 +5,9 @@
 Surge 4.2+ :
 
 [Script]
-抖音去广告&水印req = type=http-request,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=https://raw.githubusercontent.com/zwf234/rules/master/douyin.js
+抖音去广告&水印req = type=http-request,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path= https://raw.githubusercontent.com/dcc886/QuantumultX/main/js/douyin.js?token=ASDZR22MS4NG7TYTJBS3GOLAGYMHK
 
-抖音去广告&水印res = type=http-response,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zwf234/rules/master/douyin.js
+抖音去广告&水印res = type=http-response,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/dcc886/QuantumultX/main/js/douyin.js?token=ASDZR22MS4NG7TYTJBS3GOLAGYMHK
 
 [MITM]
 hostname = *.amemv.com
@@ -17,9 +17,9 @@ hostname = *.amemv.com
 QuantumultX 1.0.10+ :
 
 [rewrite_local]
-^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-request-header https://raw.githubusercontent.com/zwf234/rules/master/douyin.js
+^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-request-header https://raw.githubusercontent.com/dcc886/QuantumultX/main/js/douyin.js?token=ASDZR22MS4NG7TYTJBS3GOLAGYMHK
 
-^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-response-body https://raw.githubusercontent.com/zwf234/rules/master/douyin.js
+^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-response-body https://raw.githubusercontent.com/dcc886/QuantumultX/main/js/douyin.js?token=ASDZR22MS4NG7TYTJBS3GOLAGYMHK
 
 [mitm]
 hostname = *.amemv.com
